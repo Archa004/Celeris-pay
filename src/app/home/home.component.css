@@ -1,0 +1,26 @@
+.header{
+    text-align: center;
+}
+
+.cards{
+    width: 25%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    margin: 2%;
+    text-decoration:none;
+    
+}
+.cards:hover{
+    background-color:white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+div a{
+    text-decoration: none;
+    color: black;
+}
+.card-heading{
+    font-size: 22px;
+    font-weight: bolder;
+}

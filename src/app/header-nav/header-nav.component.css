@@ -1,0 +1,17 @@
+.nav-header{
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 0 1%;
+}
+.right-side-nav{   
+    margin-top: 2px;
+    border-radius: 5px;    
+}
+.left-side-nav{
+font-size: 35px;
+font-weight:bolder;}
+.right-side-nav:hover{
+    background-color: pink;
+}
