@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { homePageData, HomePageData } from './homePage.data';
+import { homePageData, HomePageData } from './homepage.data';
 
 
 

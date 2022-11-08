@@ -6,7 +6,7 @@
   <div class="component">
 
     <div class="cards" *ngFor="let item of data">
-      <i style="padding: 2px;" [ngClass]="['fa', item.icon]" aria-hidden="true"></i>      
+      <i class="icon" [ngClass]="['fa', item.icon]" aria-hidden="true"></i>      
       <a [routerLink]="item.routing" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
       <p class="card-heading">{{ item.title }}</p>
       <p>{{item.description}}</p>
@@ -18,4 +18,3 @@
   </div>
 
   
-

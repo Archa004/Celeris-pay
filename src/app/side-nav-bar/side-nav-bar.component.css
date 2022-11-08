@@ -5,3 +5,6 @@ ul {
     font-size: 12px;
     margin: 2px;
   }
+  .main-nav{
+display: block;
+  }

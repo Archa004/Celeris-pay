@@ -3,9 +3,9 @@
 }
 
 .cards{
-    width: 25%;
+    width: 28%;
     display: inline-flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 2%;
     margin: 2%;
     text-decoration:none;
@@ -22,5 +22,13 @@ div a{
 }
 .card-heading{
     font-size: 22px;
-    font-weight: bolder;
+    font-weight: 400;
+}
+.icon{
+margin: 2%;
+font-weight: 400;
+font-size: 22px;
+}
+.component{
+    margin-left: 5%;
 }
