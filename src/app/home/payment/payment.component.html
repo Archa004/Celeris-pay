@@ -1,7 +1,8 @@
+
 <app-header-nav></app-header-nav>
 <div style="display: flex;">
-<app-side-nav-bar style="background-color: white ;width: 25%;height: 95vh;overflow-y: scroll;"></app-side-nav-bar>
-<div style="background-color: white;width: 75%;padding: 4%;">
+<app-side-nav-bar style="scrollbar-width: thin; background-color: white ;width: 25%;height: 95vh;overflow-y: scroll;position: fixed;"></app-side-nav-bar>
+<div style="background-color: white;width: 75%;padding: 4%;margin-left: 340px;">
    <span>Payment API</span>
    <hr>
    <p>Partner PSPs can use this API to send a payment transaction to be processed by CelerisPay’s payment gateway. This API functions as a client-side POST, either with form data (utilizing CelerisPay’s provided data wrappers) or a JSON object. The result is a redirect of the client browser to the appropriate bank URL. Upon a successful, failed, or cancelled transaction, the client will be redirected to the URL specified in the API.</p>
@@ -40,6 +41,5 @@
   </div> -->
  
 
- 
 </div>
 </div>

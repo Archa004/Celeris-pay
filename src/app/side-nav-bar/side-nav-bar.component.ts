@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-side-nav-bar',
@@ -7,7 +8,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideNavBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) {}
+  payClick() {
+    console.log("done")
+    this.router.navigate(['/payment']);
+  }
+  subClick() {
+    console.log("done")
+    this.router.navigate(['/subscription']);
+  }
+  
+  intClick() {
+    console.log("done")
+    this.router.navigate(['/integration']);
+  }
+  secureClick() {
+    console.log("done")
+    this.router.navigate(['/secure']);
+  }
+  faqClick() {
+    console.log("done")
+    this.router.navigate(['/faq']);
+  }
+  testingClick() {
+    console.log("done")
+    this.router.navigate(['/testing']);
+  }
 
   ngOnInit(): void {
   }
