@@ -14,6 +14,8 @@ import { SideNavBarComponent } from './side-nav-bar/side-nav-bar.component';
 import { HeaderNavComponent } from './header-nav/header-nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IntegrationDataComponent } from './home/integration/integration-data/integration-data.component';
+
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SideNavBarComponent,
     HeaderNavComponent,
     NotFoundComponent,
+    IntegrationDataComponent,
+
     
   ],
   imports: [

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { homePageData, HomePageData } from './homepage.data';
 
 
@@ -15,7 +14,5 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  prepareRoute(outlet: RouterOutlet): boolean {
-		return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animationState'];
-	}
+ 
 }
