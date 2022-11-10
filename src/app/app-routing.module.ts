@@ -11,12 +11,18 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
       {path:'',component:HomeComponent, pathMatch: 'full'},
-      {path:'payment',component:PaymentComponent},
-      {path:'subscription',component:SubscriptionComponent},
-      {path:'integration',component:IntegrationComponent},
-      {path:'testing',component:TestingComponent},
-      {path:'faq',component:FaqComponent},
-      {path:'secure',component:SecureComponent},
+      {path:'payment',component:PaymentComponent,
+      data:{ animationState: 'Payment' }},
+      {path:'subscription',component:SubscriptionComponent,
+      data:{ animationState: 'Subscription' }},
+      {path:'integration',component:IntegrationComponent,
+      data:{ animationState: 'Integration' }},
+      {path:'testing',component:TestingComponent,
+      data:{ animationState: 'Testing' }},
+      {path:'faq',component:FaqComponent,
+      data:{ animationState: 'Faq' }},
+      {path:'secure',component:SecureComponent,
+      data:{ animationState: 'Secure' }},
       {path: '**', component: NotFoundComponent},
 ];
 

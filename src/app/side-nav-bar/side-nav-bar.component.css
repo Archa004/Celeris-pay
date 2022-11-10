@@ -8,3 +8,6 @@ ul {
   .main-nav{
 display: block;
   }
+  .accordion-header{
+    border: none !important;
+  }

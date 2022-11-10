@@ -3,10 +3,13 @@
 <div style="display: flex;">
 <app-side-nav-bar style="scrollbar-width: thin; background-color: white ;width: 25%;height: 95vh;overflow-y: scroll;position: fixed;"></app-side-nav-bar>
 <div style="background-color: white;width: 75%;padding: 4%;margin-left: 340px;">
+  <div>
    <span>Payment API</span>
    <hr>
    <p>Partner PSPs can use this API to send a payment transaction to be processed by CelerisPay’s payment gateway. This API functions as a client-side POST, either with form data (utilizing CelerisPay’s provided data wrappers) or a JSON object. The result is a redirect of the client browser to the appropriate bank URL. Upon a successful, failed, or cancelled transaction, the client will be redirected to the URL specified in the API.</p>
    <p>Currently, iframes are not supported for Net Banking payments due to bank requirements. CelerisPay can customize any intermediate pages to fit the look and feel of the partner or end-merchant. The Payment API supports the options of (1) using the Partner’s own payment page or (2) using CelerisPay’s hosted payment page.</p>
+  </div>
+  <div>
    <p>The usual integration flow can be briefed as:</p>
 
    <ol>
@@ -16,29 +19,21 @@
      <li>The client reads the response and make a getTransactionStatus API call to get the correct details of the transaction.</li>
      <li>In case of a delayed response, the client may get a notification to the respective return URL mentioned in the API call. <br>Again it is advised to make a getTransactionStatus API call to get the correct details of the transaction.</li>
    </ol> 
-
+  </div>
+  <div>
    <span>With Hosted Payment Page [HPP] </span>
    <hr>
-   <img src="../../assets/images/pmt-flow-Slide1.png" width="900" height="500">
-   <img src="../../assets/images/pmt-flow-Slide2.png" width="900" height="500">
-
+   <img src="../assets/images/pmt-flow-Slide1.png" width="900" height="500">
+   <img src="../assets/images/pmt-flow-Slide2.png" width="900" height="500">
+  </div>
+  <div id="post">
    <blockquote>
     <p>
       <span>POST</span>
       <a href="https://stagapi.celerispay.com/partnerAPI">https://stagapi.celerispay.com/partnerAPI</a>
     </p>
    </blockquote>
-<!-- <div>
-   <code>
-    <span class="token punctuation"></span>
-    <span class="token property">"lang"</span>
-    <span class="token operator">:</span>
-    <span class="token string">"en"</span>
-    <span class="token punctuation">,</span>
-    <span class="token property">"merchant"</span>
-    <span class="token operator">:</span>
-   </code>
-  </div> -->
+  </div>
  
 
 </div>

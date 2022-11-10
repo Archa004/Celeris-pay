@@ -5,14 +5,25 @@
       placeholder="Type to Search"
       id="gsearch"
       name="gsearch"
-      style="outline: none; border: none; width: 100%; margin-top: 3vh"
+      style="outline: none; border: none; width: 100%; margin-top: 3vh;padding-left: 5%;"
     />
   </form>
   <hr />
   <div class="accordion" id="accordionExample">
-    <p class="accordion-header" id="headingOne">
-      <button type="button">Introduction</button>
-    </p>
+    <!-- <p class="accordion-header" id="headingOne">
+      <button type="button" style="border:none ; background-color:white;padding-left:7%">Introduction</button>
+    </p> -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+         
+        >
+          Introduction
+        </button>
+      </h2>
+      </div>
     
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingTwo">
@@ -39,7 +50,7 @@
         <li>With Hosted Payment Page [HPP]</li>
         <li>Shopping Cart Plugin Checkout - cards </li>
         <li>Shopping Cart Plugin Checkout - APM</li>
-        <li>Without HPP : Card Payments </li>
+        <li><a href="#post">Without HPP : Card Payments </a> </li>
         <li>Without HPP : E-Bank Payments - APM</li>
         <li>Synchronous Flow : Card Payments</li>
         <li>iFrame Payment Page</li>
@@ -109,9 +120,9 @@
       >
         <div class="accordion-body">
           <ul>
-        <li>API Wrappers </li>
-        <li>Plugins </li>
-        <li>Mobile SDKs </li>       
+        <li><a routerLink="/integration" fragment="API_Wrappers" href="#API_Wrappers">API Wrappers</a> </li>
+        <li><a routerLink="/integration" fragment="Plugins" href="#Plugins">Plugins </a></li>
+        <li><a routerLink="/integration" fragment="Mobile" href="#Mobile">Mobile SDKs</a> </li>       
       </ul>
         </div>
       </div>
@@ -139,10 +150,10 @@
       >
         <div class="accordion-body">
           <ul>
-        <li>Introduction</li>
-        <li>3DS 2 Flows</li>
-        <li>How to Implement?</li>
-        <li>External 3DS</li>
+        <li><a href=" #/secure-Api?id=secure3">Introduction </a></li>
+        <li><a href="#secure1">How to Implement?</a></li>
+        <li><a href="#secure2">3DS 2 Flows</a></li>
+        <li><a href="#secure3">External 3DS</a></li>
       </ul>
         </div>
       </div>
@@ -214,3 +225,5 @@
     </div>
   </div>
 </div>
+
+

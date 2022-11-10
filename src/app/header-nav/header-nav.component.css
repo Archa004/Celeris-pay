@@ -4,6 +4,7 @@
     align-content: space-between;
     justify-content: space-between;
     padding: 0 1%;
+    position:relative;
 }
 .right-side-nav{   
     margin-top: 2px;
