@@ -15,32 +15,9 @@
         online stores.
       </p>
     </div>
+    <app-cards></app-cards>
+    
 
-    <div class="psw-cards-container">
-      <div class="psw-card csharp-card" *ngFor="let item of data">
-        <a href="#/Csharp-Wrapper">
-          <div class="__image">
-            <img src={{item.image}} />
-          </div>
-          <hr />
-          <div class="__name">{{item.title}}</div>
-        </a>
-      </div>
-
-      <div style="margin-left: 30%" class="psw-card nodejs-card">
-        <a href="#/NodeJS-Wrapper">
-          <div class="__image">
-            <img
-              style="width: 180px"
-              src="../assets/images/Node.js-logo.png"
-              alt=""
-            />
-          </div>
-          <hr />
-          <div class="__name">NodeJS</div>
-        </a>
-      </div>
-    </div>
     <div>
       <h3>Plugins</h3>
       <p>
@@ -56,27 +33,14 @@
       <div class="psw-card magento-card" *ngFor="let item of pluginsData">
         <a href="#/Magento-2.2">
           <div class="__image">
-            <img src={{item.image}} alt="" />
+            <img src={{item.image}} style="max-width: 100%; height: 100px;"/>
           </div>
           <hr />
           <div class="__name">{{item.title}}</div>
         </a>
       </div>
-
-      <div style="margin-left: 30%" class="psw-card drupal-card">
-        <a href="#/Drupal-Commerce2">
-          <div class="__image">
-            <img
-              style="width: 180px"
-              src="../assets/images/drupal.png"
-              alt=""
-            />
-          </div>
-          <hr />
-          <div class="__name">Drupal Commerce</div>
-        </a>
-      </div>
     </div>
+    
     <div>
       <h3>Mobile SDKs</h3>
       <p>

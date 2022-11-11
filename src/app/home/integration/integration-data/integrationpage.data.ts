@@ -10,6 +10,7 @@ export const integrationPageData: Array<IntegrationPageData> = [
   { image: '../assets/images/python-1.png', title: 'Python' },
   { image: '../assets/images/ruby.png', title: 'Ruby' },
   { image: '../assets/images/golang.png', title: 'Golang' },
+  { image: '../assets/images/Node.js-logo.png', title: 'NodeJS' },
 ];
 export const pluginsData: Array<IntegrationPageData> = [
   { image: '../assets/images/magento2.png', title: 'Magento 2' },
@@ -18,7 +19,8 @@ export const pluginsData: Array<IntegrationPageData> = [
   { image: '../assets/images/opencart_logo.png', title: 'OpenCart' },
   { image: '../assets/images/shopware6_logo.png', title: 'Shopware6' },
   { image: '../assets/images/shopware5_logo.png', title: 'Shopware5' },
+  { image: '../assets/images/drupal.png', title: 'Drupal Commerce' },
 ];
 export const mobileData: Array<IntegrationPageData> = [
   { image: '../assets/images/android.png', title: 'Android' },
-  { image: '../assets/images/ios-1.png', title: 'iOS' },]
+  { image: '../assets/images/ios-1.png', title: 'iOS' },];

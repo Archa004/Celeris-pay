@@ -15,6 +15,7 @@ import { HeaderNavComponent } from './header-nav/header-nav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IntegrationDataComponent } from './home/integration/integration-data/integration-data.component';
+import { CardsComponent } from './home/integration/integration-data/cards/cards.component';
 
 
 
@@ -32,6 +33,7 @@ import { IntegrationDataComponent } from './home/integration/integration-data/in
     HeaderNavComponent,
     NotFoundComponent,
     IntegrationDataComponent,
+    CardsComponent,
 
     
   ],
