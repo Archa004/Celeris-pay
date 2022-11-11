@@ -17,63 +17,13 @@
     </div>
 
     <div class="psw-cards-container">
-      <div class="psw-card csharp-card">
+      <div class="psw-card csharp-card" *ngFor="let item of data">
         <a href="#/Csharp-Wrapper">
           <div class="__image">
-            <img src="../assets/images/c-1.png" alt="" />
+            <img src={{item.image}} />
           </div>
           <hr />
-          <div class="__name">C#</div>
-        </a>
-      </div>
-
-      <div class="psw-card php-card">
-        <a href="#/PHP-Wrapper">
-          <div class="__image">
-            <img src="../assets/images/php-1.png" alt="" />
-          </div>
-          <hr />
-          <div class="__name">PHP</div>
-        </a>
-      </div>
-
-      <div class="psw-card java-card">
-        <a href="#/Java-SDK">
-          <div class="__image">
-            <img src="../assets/images/java-1.png" alt="" />
-          </div>
-          <hr />
-          <div class="__name">Java</div>
-        </a>
-      </div>
-
-      <div class="psw-card python-card">
-        <a href="#/Python-Wrapper">
-          <div class="__image">
-            <img src="../assets/images/python-1.png" alt="" />
-          </div>
-          <hr />
-          <div class="__name">Python</div>
-        </a>
-      </div>
-
-      <div class="psw-card ruby-card">
-        <a href="#/Ruby-Wrapper">
-          <div class="__image">
-            <img src="../assets/images/ruby.png" alt="" />
-          </div>
-          <hr />
-          <div class="__name">Ruby</div>
-        </a>
-      </div>
-
-      <div class="psw-card go-card">
-        <a href="#/Go-Wrapper">
-          <div class="__image">
-            <img src="../assets/images/golang.png" alt="" />
-          </div>
-          <hr />
-          <div class="__name">Golang</div>
+          <div class="__name">{{item.title}}</div>
         </a>
       </div>
 
@@ -103,65 +53,16 @@
       </p>
     </div>
     <div class="psw-cards-container">
-      <div class="psw-card magento-card">
+      <div class="psw-card magento-card" *ngFor="let item of pluginsData">
         <a href="#/Magento-2.2">
           <div class="__image">
-            <img src="../assets/images/magento2.png" alt="" />
+            <img src={{item.image}} alt="" />
           </div>
           <hr />
-          <div class="__name">Magento 2</div>
+          <div class="__name">{{item.title}}</div>
         </a>
       </div>
 
-      <div class="psw-card woocommerce-card">
-        <a href="#/WooCommerce">
-          <div class="__image">
-            <img src="../assets/images/woo.png" alt="" />
-          </div>
-          <hr />
-          <div class="__name">WooCommerce</div>
-        </a>
-      </div>
-
-      <div class="psw-card prestashop-card">
-        <a href="#/Prestashop">
-          <div class="__image">
-            <img src="../assets/images/prestashop.png" alt="" />
-          </div>
-          <hr />
-          <div class="__name">Prestashop</div>
-        </a>
-      </div>
-
-      <div class="psw-card opencart-card">
-        <a href="#/OpenCart">
-          <div class="__image">
-            <img src="../assets/images/opencart_logo.png" alt="" />
-          </div>
-          <hr />
-          <div class="__name">OpenCart</div>
-        </a>
-      </div>
-
-      <div class="psw-card shopware-card">
-        <a href="#/Shopware6">
-          <div class="__image">
-            <img src="../assets/images/shopware6_logo.png" alt="" />
-          </div>
-          <hr />
-          <div class="__name">Shopware6</div>
-        </a>
-      </div>
-
-      <div class="psw-card shopware5-card">
-        <a href="#/Shopware5">
-          <div class="__image">
-            <img src="../assets/images/shopware5_logo.png" alt="" />
-          </div>
-          <hr />
-          <div class="__name">Shopware5</div>
-        </a>
-      </div>
       <div style="margin-left: 30%" class="psw-card drupal-card">
         <a href="#/Drupal-Commerce2">
           <div class="__image">
@@ -188,23 +89,13 @@
       </p>
     </div>
     <div class="psw-cards-container">
-      <div style="margin: 5%" class="psw-card android-card">
+      <div style="margin: 7%" class="psw-card android-card" *ngFor="let item of mobileData">
         <a href="#/Android-SDK">
           <div class="__image">
-            <img src="../assets/images/android.png" alt="" />
+            <img src={{item.image}} alt="" />
           </div>
           <hr />
-          <div class="__name">Android</div>
-        </a>
-      </div>
-
-      <div class="psw-card ios-card">
-        <a href="#/ios-sdk">
-          <div class="__image">
-            <img src="../assets/images/ios-1.png" alt="" />
-          </div>
-          <hr />
-          <div class="__name">iOS</div>
+          <div class="__name">{{item.title}}</div>
         </a>
       </div>
     </div>

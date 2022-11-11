@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IntegrationPageData, integrationPageData } from './integrationpage.data';
+import { IntegrationPageData, integrationPageData, mobileData, pluginsData, } from './integrationpage.data';
 
 @Component({
   selector: 'app-integration-data',
@@ -7,7 +7,11 @@ import { IntegrationPageData, integrationPageData } from './integrationpage.data
   styleUrls: ['./integration-data.component.css']
 })
 export class IntegrationDataComponent implements OnInit {
+  
   data: Array<IntegrationPageData> = integrationPageData;
+  pluginsData: Array<IntegrationPageData> = pluginsData;
+  mobileData: Array<IntegrationPageData> = mobileData;
+
   constructor() { }
 
   ngOnInit(): void {
