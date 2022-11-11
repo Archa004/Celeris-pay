@@ -33,6 +33,13 @@
         online stores.
       </p>
     </div>
+
+    <div class="psw-cards-container">
+      <ng-container *ngFor="let item of pluginsData">
+        <app-cards [item]="item"></app-cards>
+      </ng-container>
+    </div>
+<!-- 
     <div class="psw-cards-container">
       <div class="psw-card magento-card" *ngFor="let item of pluginsData">
         <a href="#/Magento-2.2">
@@ -43,7 +50,7 @@
           <div class="__name">{{item.title}}</div>
         </a>
       </div>
-    </div>
+    </div> -->
     
     <div id="Mobile">
       <h3>Mobile SDKs</h3>
@@ -56,7 +63,14 @@
         stores.
       </p>
     </div>
+
     <div class="psw-cards-container">
+      <ng-container *ngFor="let item of mobileData">
+        <app-cards [item]="item"></app-cards>
+      </ng-container>
+    </div>
+
+    <!-- <div class="psw-cards-container">
       <div style="margin: 7%" class="psw-card android-card" *ngFor="let item of mobileData">
         <a href="#/Android-SDK">
           <div class="__image">
@@ -66,7 +80,7 @@
           <div class="__name">{{item.title}}</div>
         </a>
       </div>
-    </div>
+    </div> -->
     <div>
       <h3>Questions</h3>
       <p>

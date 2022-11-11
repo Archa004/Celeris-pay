@@ -8,6 +8,8 @@ import { IntegrationPageData, integrationPageData } from '../integrationpage.dat
 })
 export class CardsComponent implements OnInit {
   @Input() item!: IntegrationPageData;
+  
+
 
   constructor() { }
 
