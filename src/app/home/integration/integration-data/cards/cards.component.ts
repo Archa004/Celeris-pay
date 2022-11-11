@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IntegrationPageData, integrationPageData } from '../integrationpage.data';
 
 @Component({
@@ -7,7 +7,7 @@ import { IntegrationPageData, integrationPageData } from '../integrationpage.dat
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent implements OnInit {
-  data: Array<IntegrationPageData> = integrationPageData;
+  @Input() item!: IntegrationPageData;
 
   constructor() { }
 

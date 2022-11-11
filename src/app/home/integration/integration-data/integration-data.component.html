@@ -15,10 +15,14 @@
         online stores.
       </p>
     </div>
-    <app-cards></app-cards>
+    <div class="psw-cards-container">
+      <ng-container *ngFor="let item of data">
+        <app-cards [item]="item"></app-cards>
+      </ng-container>
+    </div>
     
 
-    <div>
+    <div id="Plugins">
       <h3>Plugins</h3>
       <p>
         These extensions connect your Webshop to CelerisPay’ cloud-based PCI DSS
@@ -41,7 +45,7 @@
       </div>
     </div>
     
-    <div>
+    <div id="Mobile">
       <h3>Mobile SDKs</h3>
       <p>
         These extensions connect your Webshop to CelerisPay’ cloud-based PCI DSS
