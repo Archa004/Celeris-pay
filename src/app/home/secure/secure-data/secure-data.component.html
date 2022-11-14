@@ -1,0 +1,249 @@
+<div
+  style="background-color: white; width: 75%; padding: 4%; margin-left: 340px"
+>
+  <div id="Intro">
+    <h3>3D Secure Version 2 API</h3>
+    <h4>Introduction</h4>
+    <hr />
+    <ng-container *ngFor="let item of data">
+      <h5>{{ item.heading }}</h5>
+      <hr />
+      <p>{{ item.description }}</p>
+    </ng-container>
+  </div>
+  <div>
+
+  <ol>
+    <li>knowledge (something only the user knows)</li>
+    <li>possession (something only the user possesses)</li>
+    <li>inherence (something the user is).</li>
+  </ol>
+</div>
+<div>
+  <ng-container *ngFor="let item of data_2">
+    <p>{{ item.para }}</p>
+  </ng-container>
+ 
+</div>
+<div>
+  <h2>What are the exemptions for SCA?</h2>
+  <hr />
+  <p>
+    There are a few circumstances wherein a user can be exempted from the flow
+    based on the level of risk, amount, recurrence and the payment channel being
+    used. Exempting users from SCA increases the chance of frictionless
+    transactions and thus decreases dropouts while simultaneously allowing PSPs
+    to strike the perfect balance between the convenience of payments and fraud
+    reduction. There are several cases in which an exemption is possible which
+    will be outlined below:
+  </p>
+</div>
+  <h4>Low-Risk Transactions</h4>
+  <p>
+    SCA is not mandated when a PSP having in place effective risk analysis
+    tools, assesses that the risk of fraud associated with a remote payment
+    transaction is low. The Issuer has the ultimate say on whether SCA needs to
+    be applied. The payment may be exempted if the acquirer’s and/or issuer’s
+    average fraud levels for card payments and the amount do not exceed the
+    following thresholds:
+  </p>
+  <ol>
+    <li>Below 0.13% and the payment is less than €100</li>
+    <li>Below 0.06% and the payment is less than €250</li>
+    <li>Below 0.01% and the payment is less than €500</li>
+  </ol>
+  <h4>One leg out” transactions</h4>
+  <p>
+    SCA is only required when both the cardholder’s issuer as well as the
+    merchant’s acquirer are located in the EEA region. If either of these
+    parties is outside the EEA, the SCA regulation can be exempted. Some issuers
+    may not have the logic in place to identify these types of situations,
+    particularly in the short term after the regulation goes into effect.
+  </p>
+  <div>
+    <table>
+      <tr>
+        <th>Scenarios</th>
+        <th>Issuer in EEA region</th>
+        <th>Issuer outside of EEA region</th>
+      </tr>
+      <tr>
+        <td>Acquirer in EEA region</td>
+        <td>SCA required</td>
+        <td>SCA exempted</td>
+      </tr>
+      <tr>
+        <td>Acquirer outside of EEA region</td>
+        <td>SCA exempted</td>
+        <td>SCA exempted</td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <ng-container *ngFor="let item of data_1">
+      <h6>{{ item.title }}</h6>
+      <p>{{ item.description }}</p>
+    </ng-container>
+  </div>
+  <div>
+    <p>
+      <span style="font-weight: bold"> to keep in mind for exemptions:</span>
+      The SCA exemptions are available only for PSPs and not for merchants,
+      unregulated payment gateways or other unregulated entities. The final say
+      rests with Issuer when it comes to the application of the exemption.
+    </p>
+  </div>
+  <div>
+    <h4>Liability shift</h4>
+    <hr />
+    <p>
+      If 3DS2 authentication is successful the liability of payments (fraud
+      related chargebacks) shifts from the merchant to the card issuer. Hence
+      for instance if a customer were to deny making a purchase, suspecting
+      their card details have been stolen, the liability for that does not rest
+      on the merchant, in turn protecting merchants from fraudulent
+      transactions. However it is important to note that if a payment has been
+      exempted from SCA the liability falls back on the merchant.
+    </p>
+    <p>
+      As a rule of thumb: this shift only occurs when a payment has been
+      successfully authenticated with 3DS. Liability shifts based on
+      circumstances:
+    </p>
+    <ul>
+      <li>
+        If the card has been successfully authenticated with 3DS2, the liability
+        shifts from the merchant to the card issuer, and the merchant can
+        authorize the payment.
+      </li>
+      <li>
+        If authentication fails because the cardholder does not pass the
+        challenge, liability remains with the merchant and they should not
+        proceed with the payment.
+      </li>
+      <li>
+        If the card supports 3DS but authentication is not completed due to
+        technical reasons like in the case of a network error, or closing the
+        window during verification, the liability remains with the merchant, but
+        they also get to decide whether or not to authorize the transaction.
+      </li>
+      <li>
+        If you authentication has been attempted but the issuer doesn’t support
+        3DS or its access control server doesn’t respond, the liability shifts
+        to the issuer
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h4>What are the differences between 3DS1 and 3DS2?</h4>
+    <hr />
+    <ng-container *ngFor="let item of data_3">
+      <p>{{ item.para }}</p>
+    </ng-container>
+  </div>
+  <div id="3DS">
+    <h4>3DS 2 Flows</h4>
+    <hr />
+    <h5>Challenge flow</h5>
+    <p>
+      If the issuing bank decides it needs more proof, the authentication will
+      follow the challenge flow where your customer will be prompted to provide
+      additional information to authenticate their payment. An improvement made
+      is that while 3DS1 made you design your own screen for payment
+      authentication, 3DS2 has formulated a standardised design for all
+      merchants. 3D Secure 2 is designed to embed the challenge flow directly
+      within web and mobile checkout flows without requiring additional page
+      redirects. If a customer authenticates on the merchant’s site or webpage,
+      the 3D Secure prompt appears by default in a modal on the checkout page.
+    </p>
+    <div *ngFor="let item of securePageData">
+      <img src="{{ item.image }}" width="900" height="500" />
+    </div>
+  </div>
+  <div>
+    <h5>Frictionless flow</h5>
+    <p>
+      “frictionless flow” occurs where a silent authentication is performed
+      without challenging the cardholder. 3DS 2 allows Merchants and their PSPs
+      to send more data elements on each transaction to the cardholder’s bank.
+      This data could be both payment-specific data like for example the
+      shipping address, as well as contextual data, like the customer’s device
+      ID or transaction history. The cardholder’s bank can use this information
+      to assess the risk level of the transaction and decide on whether the data
+      is enough to trust that the real cardholder is making the purchase or not.
+      If the issuer believes this is the case then the transaction goes through
+      the “frictionless” flow and authentication is completed without any
+      additional input from the cardholder. A limited form of risk-based
+      authentication was supported by 3DS1 however with the use of 3DS2, the
+      ability to share more data aims to increase the number of transactions
+      that can be authenticated without further customer input. It’s important
+      to know that if the merchant requested for an exemption which results in a
+      frictionless flow, the liability sits with the merchant. However, if the
+      issuer decides to apply the exemption, the liability shifts to the issuer.
+    </p>
+    <div *ngFor="let item of secureOneData">
+      <img src="{{ item.image }}" width="900" height="500" />     
+    </div>
+  </div>
+  <div>
+    <h5>Biometric Flow</h5>
+    <p>
+      In some cases, the Issuing bank may require the users fingerprint scan or
+      facial recognition as additional verification data before authenticating
+      the transaction. This is known as a Biometric payment flow and it takes
+      place through an in app-switch to the issuing-bank app, where users can
+      authenticate using these biometric data like fingerprint or facial
+      recognition.
+    </p>
+    <div *ngFor="let item of secureTwoData">
+      <img src="{{ item.image }}" width="900" height="500" />
+    </div>
+  </div>
+  <div id="HTI">
+    <h4>How to Implement?</h4>
+    <hr />
+    <p>
+      Merchants using our Hosted Payment Page solution do not need to do any
+      modifications in the existing integration. Merchants who are not using our
+      Hosted Payment Page solution need to collect the browser fingerprint data
+      at their end and send those data in the API request.
+    </p>
+    <h5>Collecting Browser Device Fingerprint Data</h5>
+    <p>
+      The merchant can use our Fingerprint Data collection Javascript file and
+      collect the relevant device fingerprint data:
+    </p>
+    <p>
+      Merchant can provide the Form’s ID or name in the script tag itself and
+      the library will add the relevent 3DS2 fields in threeDSdeviceFingerprint
+      field in that form:
+    </p>
+  </div>
+  <div class="code">
+
+    <pre style="background-color: black; color: white">
+      <code >{{code}}</code>
+    </pre>
+  </div>
+  <div class="code">
+    <pre style="background-color: black; color: white">
+      <code >{{code_2}}</code>
+    </pre>
+   
+  </div>
+  <div><p>the library provides you with getFingerprintJSONand getFingerprintString functions under the __gateway global object too:</p></div>
+<div class="code"><pre style="background-color: black; color: white">
+  <code >{{code_3}}</code>
+</pre></div>
+<div class="code"><pre style="background-color: black; color: white">
+  <code >{{code_4}}</code>
+</pre></div>
+<div><p>3DS 2.0 API Fields to be provided in the Payment</p></div>
+<div class="code"><pre style="background-color: black; color: white">
+  <code >{{code_5}}</code>
+</pre></div>
+  <div id="E3DS">
+    <h2>External 3DS</h2>
+  </div>
+</div>

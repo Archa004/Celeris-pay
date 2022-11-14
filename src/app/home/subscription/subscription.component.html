@@ -1,25 +1,40 @@
 <app-header-nav></app-header-nav>
-<div style="display: flex;">
-<app-side-nav-bar></app-side-nav-bar>
-<div style="background-color: white;width: 75%;padding: 4%;margin-left: 340px;">
+<div style="display: flex">
+  <app-side-nav-bar></app-side-nav-bar>
+  <div
+    style="background-color: white; width: 75%; padding: 4%; margin-left: 340px"
+  >
     <div>
-    <h3>Subscription API</h3>
-    <hr>
-    <p>Partner PSPs can use this API to send a recurring payment transaction to be processed by CelerisPay’s payment gateway. This API functions as a client-side POST, either with form data (utilizing CelerisPay’s provided data wrappers) or a JSON object.</p>
-    <p>The Payment API supports the options of (1) using the Partner’s own payment page or (2) using CelerisPay’s hosted payment page. Recurring Payment is only available for selected payment methods like Credit Cards and Sepa.</p>
+      <h3>Subscription API</h3>
+      <hr />
+      <p>
+        Partner PSPs can use this API to send a recurring payment transaction to
+        be processed by CelerisPay’s payment gateway. This API functions as a
+        client-side POST, either with form data (utilizing CelerisPay’s provided
+        data wrappers) or a JSON object.
+      </p>
+      <p>
+        The Payment API supports the options of (1) using the Partner’s own
+        payment page or (2) using CelerisPay’s hosted payment page. Recurring
+        Payment is only available for selected payment methods like Credit Cards
+        and Sepa.
+      </p>
     </div>
-    <div>
-    <h3>Create Plan</h3>
-    <hr>
-    <pre style="background-color: black;color:white">
+    <div id="CP">
+      <h3>Create Plan</h3>
+      <hr />
+      <pre style="background-color: black; color: white">
         <code >{{code}}</code>
       </pre>
     </div>
-    <div style="background-color: #f2f8f9;padding:5px">
-        <p>You must replace <a href="#api-key"> api-key </a> with your provided API Key</p>
+    <div style="background-color: #f2f8f9; padding: 5px">
+      <p>
+        You must replace <a href="#api-key"> api-key </a> with your provided API
+        Key
+      </p>
     </div>
     <div id="sub_3">
-        <h3>Query Parameters :</h3>
+      <h3>Query Parameters :</h3>
     </div>
-</div>
+  </div>
 </div>

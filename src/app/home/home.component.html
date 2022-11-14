@@ -1,21 +1,4 @@
-<div class="main">
-    <div class="header">
-  <h1 style="font-size: 55px;font-weight:bolder">celeris<span style="color: aqua;font-weight: lighter;">pay</span></h1>
-  <p style="font-size:25px;font-weight:lighter">Global Payments & Fraud Prevention Solution</p>
-  </div>
-  <div class="component">
+<app-home-data></app-home-data>
 
-    <div class="cards" *ngFor="let item of data">
-      <i class="icon" [ngClass]="['fa', item.icon]" aria-hidden="true"></i>      
-      <a [routerLink]="item.routing" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
-      <p class="card-heading">{{ item.title }}</p>
-      <p>{{item.description}}</p>
-    </a> 
-    </div>
- 
-
-  </div>
- 
-  </div>
 
   

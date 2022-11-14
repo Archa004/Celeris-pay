@@ -1,6 +1,7 @@
 .psw-cards-container {
     justify-content: center;
     flex-wrap: wrap;
+    /* display: flex; */
 }
 /* 
 .psw-card{
@@ -13,7 +14,7 @@
 } */
 
 .psw-cards-container :hover{
-background-color: aliceblue;
+    background-color: aliceblue;
 }
 
 /* .__image{

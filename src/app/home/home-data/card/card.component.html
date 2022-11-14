@@ -1,0 +1,11 @@
+<div class="cards">
+  <i class="icon" [ngClass]="['fa', item.icon]" aria-hidden="true"></i>
+  <a
+    [routerLink]="item.routing"
+    routerLinkActive="activebutton"
+    ariaCurrentWhenActive="page"
+  >
+    <p class="card-heading">{{ item.title }}</p>
+    <p>{{ item.description }}</p>
+  </a>
+</div>

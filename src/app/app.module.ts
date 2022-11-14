@@ -16,8 +16,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IntegrationDataComponent } from './home/integration/integration-data/integration-data.component';
 import { CardsComponent } from './home/integration/integration-data/cards/cards.component';
-
-
+import { SecureDataComponent } from './home/secure/secure-data/secure-data.component';
+import { HomeDataComponent } from './home/home-data/home-data.component';
+import { CardComponent } from './home/home-data/card/card.component';
 
 @NgModule({
   declarations: [
@@ -34,15 +35,12 @@ import { CardsComponent } from './home/integration/integration-data/cards/cards.
     NotFoundComponent,
     IntegrationDataComponent,
     CardsComponent,
-
-    
+    SecureDataComponent,
+    HomeDataComponent,
+    CardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
