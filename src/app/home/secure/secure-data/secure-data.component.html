@@ -161,13 +161,10 @@
     </p>
   </div>
 
-  <pre class="code">
-      <code >{{code}}</code>
+  <pre class="code" *ngFor="let item of secureCodeData">
+      <code >{{item.code}}</code>
     </pre>
 
-  <pre class="code">
-      <code >{{code_2}}</code>
-    </pre>
 
   <div>
     <p>
@@ -175,16 +172,14 @@
       functions under the __gateway global object too:
     </p>
   </div>
-  <pre class="code">
-  <code >{{code_3}}</code>
-</pre>
-  <pre class="code">
-  <code >{{code_4}}</code>
-</pre>
+  <pre class="code" *ngFor="let item of secureCodeData_1">
+    <code >{{item.code}}</code>
+  </pre>
+  <pre class="code" *ngFor="let item of secureCodeData_2">
+    <code >{{item.code}}</code>
+  </pre>
   <div><p>3DS 2.0 API Fields to be provided in the Payment</p></div>
-  <pre class="code">
-  <code >{{code_5}}</code>
-</pre>
+
   <div id="E3DS">
     <h2>External 3DS</h2>
   </div>

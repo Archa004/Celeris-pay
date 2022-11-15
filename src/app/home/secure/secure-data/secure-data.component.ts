@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SecureCodeData, secureCodeData, secureCodeData_1, secureCodeData_2, } from './securecode.data';
 import {
   secureOneData,
   securePageData,
@@ -32,6 +33,12 @@ export class SecureDataComponent implements OnInit {
   securePageData: Array<SecurePageData> = securePageData;
   secureOneData: Array<SecurePageData> = secureOneData;
   secureTwoData: Array<SecurePageData> = secureTwoData;
+
+
+  secureCodeData: Array<SecureCodeData> = secureCodeData;
+  secureCodeData_1: Array<SecureCodeData> = secureCodeData_1;
+  secureCodeData_2: Array<SecureCodeData> = secureCodeData_2;
+ 
 
   data_1 = [
     {
@@ -95,92 +102,10 @@ export class SecureDataComponent implements OnInit {
       para: 'According to Visa, less than 5% of the transactions will require additional verification. Providing frictionless payments is advantageous since customers can make purchases quickly and effortlessly. Therefore, if used efficiently, 3DS2 can reduce fraud, minimize cardholder friction, decrease cart abandonment rate, and finally, contribute to a better experience for all parties.',
     },
   ];
-  code = `<script src="/JS/fingerprint-datapicker-lib.js" data-form-id="myUniqueFormID"></script>`;
-  code_2 = `<script src="/JS/fingerprint-datapicker-lib.js" data-form-id="myUniqueFormName"></script>`;
-  code_3 = `<script src="/JS/fingerprint-datapicker-lib.js"></script>
-  <form id="myForm">
-     <input id="threeDS2FP" name="threeDS2FP">
-  </form>
+
   
-  <script>
-  document.getElementById("threeDS2FP").value = __gateway.getFingerprintString();
-  </script>`;
-  code_4 = `
-  var client = new ClientJS();
- 
-   client.getBrowserData();
- 
-   client.getUserAgent();
-   client.getUserAgentLowerCase();
- 
-   client.getBrowser();
-   client.getBrowserVersion();
-   client.getBrowserMajorVersion();
- 
-   client.getEngineVersion();
- 
-   client.getOS();
-   client.getOSVersion();
-   client.getDevice();
-   client.getDeviceType();
- 
-   client.getCPU();
- 
-   client.getScreenPrint();
-   client.getColorDepth();
-   client.getCurrentResolution();
-   client.getAvailableResolution();
- 
-   client.isJava();
-   client.getJavaVersion();
  
  
-   client.getTimeZone();
- 
-   client.getLanguage();
-   client.getSystemLanguage();
- 
- `;
-  code_5 = `
- "3DSecure":{
-      "deviceFingerprint":{
-         "timezone": "330",
-         "browserColorDepth": "24",
-         "browserLanguage": "en-GB",
-         "browserScreenHeight": "1080",
-         "browserScreenWidth": "1920",
-         "os": "windows",
-         "browserAcceptHeader":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*",
-         "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36",
-         "browserJavascriptEnabled": false,
-         "browserJavaEnabled" : true,
-         "acceptContent":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
-         "browserIP" :"192.1.1.1"
-      },
-      "sdk":{
-       "sdkAppID":"8ff65412-0e9d-4b4d-9cad-c68446930767",
-       "sdkEncData":"92e265838b0a5ebf5d399f4cd6ac9ba0a2f08fdd8c8bc02f4a44654c26b6b99592e265838b0a5ebf5d399f4cd6ac9ba0a2f08fdd8c8bc02f4a44654c26b6b995",
-       "sdkEphemPubKey":"92e265838b0a5ebf5d399f4cd6ac9ba0a2f08fdd8c8bc02f4a44654c26b6b995",
-       "sdkMaxTimeout":"60",
-       "sdkReferenceNumber":"2bfdd080-8688-4226-bb91-2d5e474e73f1",
-       "sdkTransID":"98d77730-a163-4e50-98f1-3b9786c0d9aa"
- 
-      },
-      "exemptions":{
-         "lowValue":true,
-         "tra": true,
-         "trustedBeneficiary":true,
-         "secureCorporatePayment":true,
-         "delegatedAuthentication":true,
-         "recurringMITExemptionSameAmount" : true,
-         "recurringMITExemptionOther" : true,
-         "vmid":"12345"
-     },
-     "challengeIndicator":"01",
-     "challengeWindowSize":"05" 
- 
-   }
- `;
   data_4 = [
     {
       title: 'Challenge flow',
@@ -255,6 +180,7 @@ export class SecureDataComponent implements OnInit {
   ];
 
   item: any;
+
 
   constructor() {}
 
