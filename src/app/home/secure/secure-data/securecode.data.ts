@@ -10,8 +10,8 @@ export const secureCodeData: Array<SecureCodeData> = [
   },
 ];
 export const secureCodeData_1: Array<SecureCodeData> = [
-    {
-      code: `<script src="/JS/fingerprint-datapicker-lib.js"></script>
+  {
+    code: `<script src="/JS/fingerprint-datapicker-lib.js"></script>
       <form id="myForm">
          <input id="threeDS2FP" name="threeDS2FP">
       </form>
@@ -19,11 +19,51 @@ export const secureCodeData_1: Array<SecureCodeData> = [
       <script>
       document.getElementById("threeDS2FP").value = __gateway.getFingerprintString();
       </script>`,
-    },
-  ];
-  export const secureCodeData_2: Array<SecureCodeData> = [
-    {
-      code: `
+  },
+];
+export const secureCodeData_2: Array<SecureCodeData> = [
+  {
+    code: `
+      var client = new ClientJS();
+     
+       client.getBrowserData();
+     
+       client.getUserAgent();
+       client.getUserAgentLowerCase();
+     
+       client.getBrowser();
+       client.getBrowserVersion();
+       client.getBrowserMajorVersion();
+     
+       client.getEngineVersion();
+     
+       client.getOS();
+       client.getOSVersion();
+       client.getDevice();
+       client.getDeviceType();
+     
+       client.getCPU();
+     
+       client.getScreenPrint();
+       client.getColorDepth();
+       client.getCurrentResolution();
+       client.getAvailableResolution();
+     
+       client.isJava();
+       client.getJavaVersion();
+     
+     
+       client.getTimeZone();
+     
+       client.getLanguage();
+       client.getSystemLanguage();
+     
+     `,
+  },
+];
+export const secureCodeData_3: Array<SecureCodeData> = [
+  {
+    code: `
       "3DSecure":{
            "deviceFingerprint":{
               "timezone": "330",
@@ -63,5 +103,5 @@ export const secureCodeData_1: Array<SecureCodeData> = [
       
         }
       `,
-    },
-  ];
+  },
+];

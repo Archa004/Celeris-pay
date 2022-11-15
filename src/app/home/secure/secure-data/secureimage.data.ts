@@ -1,15 +1,15 @@
-export interface SecurePageData {
+export interface SecureImageData {
   image: string;
 }
 
-export const securePageData: Array<SecurePageData> = [
+export const imageoneData: Array<SecureImageData> = [
   { image: '../assets/images/HPP-Challenge-Flow.jpg' },
 ];
-export const secureOneData: Array<SecurePageData> = [
+export const imagetwoData: Array<SecureImageData> = [
   { image: '../assets/images/Frictionless-HPP-flow.jpg' },
   { image: '../assets/images/Frictionless-without-HPP-flow.jpg' },
 ];
-export const secureTwoData: Array<SecurePageData> = [
+export const imagethreeData: Array<SecureImageData> = [
   {
     image:
       '../assets/images/HPP-Fingerprint-n-Biometric-and-Frictionless-Flow.jpg',
