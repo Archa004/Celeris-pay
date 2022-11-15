@@ -3,7 +3,9 @@
     align-items: center;
     align-content: space-between;
     justify-content: space-between;
-    padding: 0 1%;    
+    padding: 0 1%; 
+    background-color: rgb(231, 240, 240);  
+   
 }
 .right-side-nav{   
     margin-top: 2px;

@@ -12,7 +12,9 @@ table, td, th {
     padding: 15px;
   }
   .code{
-    width: 70%;
+    /* width: 70%; */
     padding-left: 4%;
+    background-color: black;
+    color: antiquewhite;
   }
   

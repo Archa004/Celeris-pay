@@ -141,7 +141,7 @@ export class SecureDataComponent implements OnInit {
    client.getSystemLanguage();
  
  `;
- code_5 = `
+  code_5 = `
  "3DSecure":{
       "deviceFingerprint":{
          "timezone": "330",
@@ -181,6 +181,78 @@ export class SecureDataComponent implements OnInit {
  
    }
  `;
+  data_4 = [
+    {
+      title: 'Challenge flow',
+      para: 'If the issuing bank decides it needs more proof, the authentication will follow the challenge flow where your customer will be prompted to provide additional information to authenticate their payment. An improvement made is that while 3DS1 made you design your own screen for payment authentication, 3DS2 has formulated a standardised design for all merchants. 3D Secure 2 is designed to embed the challenge flow directly within web and mobile checkout flows without requiring additional page redirects. If a customer authenticates on the merchant’s site or webpage, the 3D Secure prompt appears by default in a modal on the checkout page.',
+    },
+  ];
+  data_5 = [
+    {
+      title: 'Frictionless flow',
+      para: '“frictionless flow” occurs where a silent authentication is performed without challenging the cardholder. 3DS 2 allows Merchants and their PSPs to send more data elements on each transaction to the cardholder’s bank. This data could be both payment-specific data like for example the shipping address, as well as contextual data, like the customer’s device ID or transaction history. The cardholder’s bank can use this information to assess the risk level of the transaction and decide on whether the data is enough to trust that the real cardholder is making the purchase or not. If the issuer believes this is the case then the transaction goes through the “frictionless” flow and authentication is completed without any additional input from the cardholder. A limited form of risk-based authentication was supported by 3DS1 however with the use of 3DS2, the ability to share more data aims to increase the number of transactions that can be authenticated without further customer input. It’s important to know that if the merchant requested for an exemption which results in a frictionless flow, the liability sits with the merchant. However, if the issuer decides to apply the exemption, the liability shifts to the issuer.',
+    },
+  ];
+  data_6 = [
+    {
+      title: 'Biometric Flow',
+      para: 'In some cases, the Issuing bank may require the users fingerprint scan or facial recognition as additional verification data before authenticating the transaction. This is known as a Biometric payment flow and it takes place through an in app-switch to the issuing-bank app, where users can authenticate using these biometric data like fingerprint or facial recognition.',
+    },
+  ];
+  data_7 = [
+    {
+      title: 'Collecting Browser Device Fingerprint Data',
+      para: ' The merchant can use our Fingerprint Data collection Javascript file and collect the relevant device fingerprint data:',
+    },
+  ];
+  orderlist_1 = [
+    {
+      line_1: ' knowledge (something only the user knows)',
+      line_2: 'possession (something only the user possesses)',
+      line_3: 'inherence (something the user is).',
+    },
+  ];
+  orderlist_2 = [
+    {
+      line_1: ' Below 0.13% and the payment is less than €100',
+      line_2: 'Below 0.06% and the payment is less than €250',
+      line_3: 'Below 0.01% and the payment is less than €500',
+    },
+  ];
+  unorderlist_1 = [
+    {
+      list: ' If the card has been successfully authenticated with 3DS2, the liability shifts from the merchant to the card issuer, and the merchant can authorize the payment.',
+    },
+    {
+      list: 'If authentication fails because the cardholder does not pass the challenge, liability remains with the merchant and they should not proceed with the payment.',
+    },
+    {
+      list: ' If the card supports 3DS but authentication is not completed due to technical reasons like in the case of a network error, or closing the window during verification, the liability remains with the merchant, but they also get to decide whether or not to authorize the transaction.',
+    },
+    {
+      list: ' If you authentication has been attempted but the issuer doesn’t support 3DS or its access control server doesn’t respond, the liability shifts to the issuer',
+    },
+  ];
+
+  table_data_1 = [
+    {
+      th_1: 'Scenarios',
+      th_2: 'Issuer in EEA region',
+      th_3: 'Issuer outside of EEA region',
+      td_1: 'Acquirer in EEA region',
+      td_2: 'SCA required',
+      td_3: 'SCA exempted',
+      td_4: 'Acquirer outside of EEA region',
+    },
+  ];
+  data_8 = [
+    {
+      title: 'Liability shift',
+      para_1:
+        ' If 3DS2 authentication is successful the liability of payments (fraud related chargebacks) shifts from the merchant to the card issuer. Hence for instance if a customer were to deny making a purchase, suspecting their card details have been stolen, the liability for that does not rest on the merchant, in turn protecting merchants from fraudulent transactions. However it is important to note that if a payment has been exempted from SCA the liability falls back on the merchant.',
+      para_2: ' As a rule of thumb: this shift only occurs when a payment has been successfully authenticated with 3DS. Liability shifts based on circumstances:',
+    },
+  ];
 
   item: any;
 
