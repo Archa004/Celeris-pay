@@ -25,7 +25,7 @@ import {
   imagetwoData,
   SecureImageData,
 } from './secureimage.data';
-import { orderlist_1, orderlist_2, SecureorderlistData } from './secureorderlist.data';
+import { orderlist_1, orderlist_2, unorderlist_1, } from './secureorderlist.data';
 
 @Component({
   selector: 'app-secure-data',
@@ -59,23 +59,26 @@ export class SecureDataComponent implements OnInit {
 
   // orderlist
 
-  orderlist_1: Array<SecureorderlistData> = orderlist_1;
-  orderlist_2: Array<SecureorderlistData> = orderlist_2;
+  orderlist_1: Array<String> = orderlist_1;
+  orderlist_2: Array<String> = orderlist_2;
+  unorderlist_1: Array<String> = unorderlist_1;
 
-  unorderlist_1 = [
-    {
-      list: ' If the card has been successfully authenticated with 3DS2, the liability shifts from the merchant to the card issuer, and the merchant can authorize the payment.',
-    },
-    {
-      list: 'If authentication fails because the cardholder does not pass the challenge, liability remains with the merchant and they should not proceed with the payment.',
-    },
-    {
-      list: ' If the card supports 3DS but authentication is not completed due to technical reasons like in the case of a network error, or closing the window during verification, the liability remains with the merchant, but they also get to decide whether or not to authorize the transaction.',
-    },
-    {
-      list: ' If you authentication has been attempted but the issuer doesn’t support 3DS or its access control server doesn’t respond, the liability shifts to the issuer',
-    },
-  ];
+
+  
+  // unorderlist_1 = [
+  //   {
+  //     list: ' If the card has been successfully authenticated with 3DS2, the liability shifts from the merchant to the card issuer, and the merchant can authorize the payment.',
+  //   },
+  //   {
+  //     list: 'If authentication fails because the cardholder does not pass the challenge, liability remains with the merchant and they should not proceed with the payment.',
+  //   },
+  //   {
+  //     list: ' If the card supports 3DS but authentication is not completed due to technical reasons like in the case of a network error, or closing the window during verification, the liability remains with the merchant, but they also get to decide whether or not to authorize the transaction.',
+  //   },
+  //   {
+  //     list: ' If you authentication has been attempted but the issuer doesn’t support 3DS or its access control server doesn’t respond, the liability shifts to the issuer',
+  //   },
+  // ];
 
   table_data_x = [
     ['Scenarios', 'Issuer in EEA region', 'Issuer outside of EEA region'],
@@ -96,6 +99,7 @@ export class SecureDataComponent implements OnInit {
   // ];
 
   item: any;
+String: any;
 
   constructor() {}
 

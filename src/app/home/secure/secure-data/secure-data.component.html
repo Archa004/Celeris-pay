@@ -9,14 +9,18 @@
       <p>{{ item.description }}</p>
     </ng-container>
   </div>
-
-  <ng-container *ngFor="let item of orderlist_1">
+  <ng-container >
+    <ol>
+      <li *ngFor="let item  of orderlist_1">{{item}} </li>
+    </ol>
+  </ng-container>
+  <!-- <ng-container *ngFor="let item of orderlist_1">
     <ol>
       <li>{{ item.line_1 }}</li>
       <li>{{ item.line_2 }}</li>
       <li>{{ item.line_3 }}</li>
     </ol>
-  </ng-container>
+  </ng-container> -->
   <p>
     These must be independent of one another, in that the breach of one does
     notcompromise the reliability of the others, and is designed in such a way
@@ -64,13 +68,19 @@
     average fraud levels for card payments and the amount do not exceed the
     following thresholds:
   </p>
-  <ng-container *ngFor="let item of orderlist_2">
+  <ng-container >
+    <ol>
+      <li *ngFor="let item  of orderlist_2">{{item}} </li>
+    </ol>
+  </ng-container>
+  
+  <!-- <ng-container *ngFor="let item of orderlist_2">
     <ol>
       <li>{{ item.line_1 }}</li>
       <li>{{ item.line_2 }}</li>
       <li>{{ item.line_3 }}</li>
     </ol>
-  </ng-container>
+  </ng-container> -->
 
   <h4>One leg out” transactions</h4>
   <p>
@@ -131,11 +141,16 @@
       circumstances:
     </p>
   </ng-container>
-  <ng-container *ngFor="let item of unorderlist_1">
+  <ng-container >
+    <ul>
+      <li *ngFor="let item  of unorderlist_1">{{item}} </li>
+    </ul>
+  </ng-container>
+  <!-- <ng-container *ngFor="let item of unorderlist_1">
     <ul>
       <li>{{ item.list }}</li>
     </ul>
-  </ng-container>
+  </ng-container> -->
 
   <div>
     <h4>What are the differences between 3DS1 and 3DS2?</h4>
