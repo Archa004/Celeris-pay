@@ -1,0 +1,12 @@
+.main_div{
+display: flex;
+flex-wrap: wrap;
+}
+.cards{
+width: 27%;
+margin-left: 3%;
+padding: 2%;
+}
+.cards:hover{
+    background-color: aliceblue;
+}

@@ -19,6 +19,8 @@ import { CardsComponent } from './home/integration/integration-data/cards/cards.
 import { SecureDataComponent } from './home/secure/secure-data/secure-data.component';
 import { HomeDataComponent } from './home/home-data/home-data.component';
 import { CardComponent } from './home/home-data/card/card.component';
+import { FaqPageComponent } from './home/faq/faq-page/faq-page.component';
+import { FaqPageCardComponent } from './home/faq/faq-page-card/faq-page-card.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { CardComponent } from './home/home-data/card/card.component';
     SecureDataComponent,
     HomeDataComponent,
     CardComponent,
+    FaqPageComponent,
+    FaqPageCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
