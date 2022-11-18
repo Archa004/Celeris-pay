@@ -1,0 +1,31 @@
+<h1>Testing</h1>
+<hr>
+<h1>Available Card Types</h1>
+<hr>
+<p>The following are the available card types:</p>
+<table class="table_a">
+    <tr *ngFor="let row of table_data_a; let idx = index">
+      <ng-container *ngFor="let col of row">
+        <th *ngIf="idx === 0 ">{{col}}</th>
+       
+        <td *ngIf="idx !== 0 ">{{col}}</td>
+      </ng-container>
+    </tr>
+  </table>
+<h1>Test Credentials</h1>
+<hr>
+<p>Please select an Acquirer: </p>
+<button></button>
+<h2>Test Cards</h2>
+<h2>Test Cards 3D Secure 1</h2>
+<hr>
+<table class="table_b">
+    <tr *ngFor="let row of table_data_b; let idx = index">
+      <ng-container *ngFor="let col of row">
+        <th *ngIf="idx === 0">{{col}}</th>
+        <td *ngIf="idx !== 0">{{col}}</td>
+      </ng-container>
+    </tr>
+  </table>
+  <h1>Test Cards 3D Secure 2</h1>
+  <hr>

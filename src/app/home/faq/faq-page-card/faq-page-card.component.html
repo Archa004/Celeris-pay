@@ -1,5 +1,5 @@
 <div class="main_div">
-<div class="cards">
+<!-- <div class="cards">
   <h4>Account Setup</h4>
   <p>How do I get started?</p>
   <p>How long will it take to receive an active account?</p>
@@ -7,61 +7,120 @@
     What are the requirements to perform server-to-server payments without
     hosted payments?
   </p>
+</div> -->
+<div class="cards"*ngFor="let item of card_1">
+  <h4>{{item.title}}</h4>
+  <p>{{item.para}}</p>
 </div>
-<div class="cards">
+<!-- <div class="cards">
   <h4>Integrations</h4>
   <p>What programming languages do you support?</p>
   <p>Can I integrate with my Android/IOS mobile app?</p>
   <p>Can I still install your plugins if my business is run on an eCommerce platform?</p>    
+</div>-->
+<div class="cards"*ngFor="let item of card_2">
+  <h4>{{item.title}}</h4>
+  <p>{{item.para}}</p>
 </div>
-<div class="cards">
+
+<!-- <div class="cards">
   <h4>Payments</h4>
   <p>How do I process payments from your platform?</p>
   <p>Do you have any test credentials/cards for staging the integration?</p>
   <p>Can I simulate a failed payment in your staging environment?</p>
+</div> -->
+
+<div class="cards"*ngFor="let item of card_3">
+  <h4>{{item.title}}</h4>
+  <p>{{item.para}}</p>
 </div>
-<div class="cards">
+
+<!-- <div class="cards">
   <h4>3D Secure 2</h4>
   <p>What is SCA?</p>
   <p>How difficult is it to implement SCA?</p>
   <p>When can SCA be exempted?</p>
   <p>What is 3DS2?</p>
   <p>When does a liability shift occur?</p>
+</div> -->
+
+<div class="cards"*ngFor="let item of card_4">
+  <h4>{{item.title}}</h4>
+  <p>{{item.para}}</p>
 </div>
-<div class="cards">
+
+
+<!-- <div class="cards">
   <h4>Backoffice</h4>
   <p> Why do I get “Void is not supported”?</p>
   <p>Why do I get “refund not allowed”?</p>
   <p>What is the difference between void and refund?</p>
+</div> -->
+
+<div class="cards"*ngFor="let item of card_5">
+  <h4>{{item.title}}</h4>
+  <p>{{item.para}}</p>
 </div>
-<div class="cards">
+
+
+<!-- <div class="cards">
   <h4>Webhooks</h4>
   <p>What is a webhook notification?</p>
   <p>What is the difference between Callback notification and Transaction Status?</p>
   <p>What are different types of events supported by webhooks?</p>
+</div> -->
+
+<div class="cards"*ngFor="let item of card_6">
+  <h4>{{item.title}}</h4>
+  <p>{{item.para}}</p>
 </div>
-<div class="cards">
+
+
+<!-- <div class="cards">
   <h4>Going Live</h4>
   <p>What do I need to check before going live with the new integration?</p>
   <p>I have finalized the integration now how do I move to production?</p>
   <p>Do the test cards work in the production environment?</p>
+</div> -->
+
+<div class="cards"*ngFor="let item of card_7">
+  <h4>{{item.title}}</h4>
+  <p>{{item.para}}</p>
 </div>
-<div class="cards">
+
+<!-- <div class="cards">
   <h4>Portal</h4>
   <p>Where do I find my User ID and password?</p>
   <p>Where do I enter User ID and password to the Merchant Portal?</p>
   <p>How do I check if a customer’s payment has been declined?</p>
+</div> -->
+
+<div class="cards"*ngFor="let item of card_8">
+  <h4>{{item.title}}</h4>
+  <p>{{item.para}}</p>
 </div>
-<div class="cards">
+
+
+<!-- <div class="cards">
   <h4>PCI Compliance</h4>
   <p>Do I need to be PCI compliant in order to process payments?</p>
   <p>How do I get PCI Compliant?</p>
   <p>What PCI form is needed for server to server payments?</p>
+</div> -->
+
+<div class="cards"*ngFor="let item of card_9">
+  <h4>{{item.title}}</h4>
+  <p>{{item.para}}</p>
 </div>
-<div class="cards">
+
+<!-- <div class="cards">
     <h4>Subscription</h4>
     <p>How do subscriptions work?</p>
     <p>How can I create a plan for a subscription?</p>
     <p>How can I create a subscription?</p>
+</div> -->
+<div class="cards"*ngFor="let item of card_10">
+  <h4>{{item.title}}</h4>
+  <p>{{item.para}}</p>
 </div>
 </div>

@@ -1,11 +1,15 @@
 .main_div{
 display: flex;
 flex-wrap: wrap;
+background-color: rgb(205, 170, 238);
 }
 .cards{
 width: 27%;
 margin-left: 3%;
 padding: 2%;
+display: block;
+background-color: rgb(197, 247, 230);
+
 }
 .cards:hover{
     background-color: aliceblue;

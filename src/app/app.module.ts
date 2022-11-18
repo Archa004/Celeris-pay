@@ -21,6 +21,8 @@ import { HomeDataComponent } from './home/home-data/home-data.component';
 import { CardComponent } from './home/home-data/card/card.component';
 import { FaqPageComponent } from './home/faq/faq-page/faq-page.component';
 import { FaqPageCardComponent } from './home/faq/faq-page-card/faq-page-card.component';
+import { TestingDataComponent } from './home/testing/testing-data/testing-data.component';
+import { PaymentDataComponent } from './home/payment/payment-data/payment-data.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { FaqPageCardComponent } from './home/faq/faq-page-card/faq-page-card.com
     CardComponent,
     FaqPageComponent,
     FaqPageCardComponent,
+    TestingDataComponent,
+    PaymentDataComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

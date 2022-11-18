@@ -1,10 +1,7 @@
 export interface FaqPageData {}
 
 export const faqPageData: Array<FaqPageData> = [
-  {
-    title: 'Account Setup',
-    description: ['How do I get started?', 'How long will it take to receive an active account?', 'What are the requirements to perform server-to-server payments without hosted payments?']
-  },
+  
   {
     title: 'Integrations',
     // description: ['What programming languages do you support?','Can I integrate with my Android/IOS mobile app?','Can I still install your plugins if my business is run on an eCommerce platform?']
