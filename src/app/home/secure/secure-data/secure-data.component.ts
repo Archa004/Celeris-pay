@@ -81,10 +81,10 @@ export class SecureDataComponent implements OnInit {
   // ];
 
   table_data_x = [
-    row : {
-      columns: [],
-      isColor: yes
-    }
+    // row : {
+    //   columns: [],
+    //   isColor: yes
+    // }
     ['Scenarios', 'Issuer in EEA region', 'Issuer outside of EEA region'],
     ['Acquirer in EEA region', 'SCA required', 'SCA exempted'],
     ['Acquirer outside of EEA region', 'SCA exempted', 'SCA exempted'],
