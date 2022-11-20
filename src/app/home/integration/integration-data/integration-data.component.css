@@ -1,6 +1,7 @@
 .psw-cards-container {
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
     /* display: flex; */
 }
 /* 

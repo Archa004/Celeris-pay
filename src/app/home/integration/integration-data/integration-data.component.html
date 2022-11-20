@@ -1,45 +1,44 @@
 <div
-    style="padding: 4%; margin-left: 340px; background-color: white; width: 75%"
-  >
-    <div><h2>Integrations</h2></div>
+  style="padding: 4%; margin-left: 340px; background-color: white; width: 75%"
+>
+  <div><h2>Integrations</h2></div>
 
-    <div id="API_Wrappers">
-      <h3 style="margin: 5% 0% 5% 0%">API Wrappers</h3>
-      <hr />
-      <p style="margin-top: 5%">
-        These extensions connect your Webshop to CelerisPay’ cloud-based PCI DSS
-        3.0 Level-1 certified international payment gateway. Your customers get
-        the convenience and speed of our intuitive payment process, fully
-        mobile-optimized payment pages, and a wide range of payment options. The
-        wrappers are free for all merchants to use and integrate into their
-        online stores.
-      </p>
-    </div>
-    <div class="psw-cards-container">
-      <ng-container *ngFor="let item of data">
-        <app-cards [item]="item"></app-cards>
-      </ng-container>
-    </div>
-    
+  <div id="API_Wrappers">
+    <h3 style="margin: 5% 0% 5% 0%">API Wrappers</h3>
+    <hr />
+    <p style="margin-top: 5%">
+      These extensions connect your Webshop to CelerisPay’ cloud-based PCI DSS
+      3.0 Level-1 certified international payment gateway. Your customers get
+      the convenience and speed of our intuitive payment process, fully
+      mobile-optimized payment pages, and a wide range of payment options. The
+      wrappers are free for all merchants to use and integrate into their online
+      stores.
+    </p>
+  </div>
+  <div class="psw-cards-container">
+    <ng-container *ngFor="let item of data">
+      <app-cards [item]="item"></app-cards>
+    </ng-container>
+  </div>
 
-    <div id="Plugins">
-      <h3>Plugins</h3>
-      <p>
-        These extensions connect your Webshop to CelerisPay’ cloud-based PCI DSS
-        3.0 Level-1 certified international payment gateway. Your customers get
-        the convenience and speed of our intuitive payment process, fully
-        mobile-optimized payment pages, and a wide range of payment options. The
-        plugins are free for all merchants to use and integrate into their
-        online stores.
-      </p>
-    </div>
+  <div id="Plugins">
+    <h3>Plugins</h3>
+    <p>
+      These extensions connect your Webshop to CelerisPay’ cloud-based PCI DSS
+      3.0 Level-1 certified international payment gateway. Your customers get
+      the convenience and speed of our intuitive payment process, fully
+      mobile-optimized payment pages, and a wide range of payment options. The
+      plugins are free for all merchants to use and integrate into their online
+      stores.
+    </p>
+  </div>
 
-    <div class="psw-cards-container">
-      <ng-container *ngFor="let item of pluginsData">
-        <app-cards [item]="item"></app-cards>
-      </ng-container>
-    </div>
-<!-- 
+  <div class="psw-cards-container">
+    <ng-container *ngFor="let item of pluginsData">
+      <app-cards [item]="item"></app-cards>
+    </ng-container>
+  </div>
+  <!-- 
     <div class="psw-cards-container">
       <div class="psw-card magento-card" *ngFor="let item of pluginsData">
         <a href="#/Magento-2.2">
@@ -51,26 +50,26 @@
         </a>
       </div>
     </div> -->
-    
-    <div id="Mobile">
-      <h3>Mobile SDKs</h3>
-      <p>
-        These extensions connect your Webshop to CelerisPay’ cloud-based PCI DSS
-        3.0 Level-1 certified international payment gateway. Your customers get
-        the convenience and speed of our intuitive payment process, fully
-        mobile-optimized payment pages, and a wide range of payment options. The
-        SDKs are free for all merchants to use and integrate into their online
-        stores.
-      </p>
-    </div>
 
-    <div class="psw-cards-container">
-      <ng-container *ngFor="let item of mobileData">
-        <app-cards [item]="item"></app-cards>
-      </ng-container>
-    </div>
+  <div id="Mobile">
+    <h3>Mobile SDKs</h3>
+    <p>
+      These extensions connect your Webshop to CelerisPay’ cloud-based PCI DSS
+      3.0 Level-1 certified international payment gateway. Your customers get
+      the convenience and speed of our intuitive payment process, fully
+      mobile-optimized payment pages, and a wide range of payment options. The
+      SDKs are free for all merchants to use and integrate into their online
+      stores.
+    </p>
+  </div>
 
-    <!-- <div class="psw-cards-container">
+  <div class="psw-cards-container">
+    <div *ngFor="let item of mobileData">
+      <app-cards [item]="item"></app-cards>
+    </div>
+  </div>
+
+  <!-- <div class="psw-cards-container">
       <div style="margin: 7%" class="psw-card android-card" *ngFor="let item of mobileData">
         <a href="#/Android-SDK">
           <div class="__image">
@@ -81,15 +80,15 @@
         </a>
       </div>
     </div> -->
-    <div>
-      <h3>Questions</h3>
-      <p>
-        For further questions or feedback, kindly send us your questions or
-        suggestions to:
-      </p>
-      <p style="color: #03b7ff; text-decoration: underline">
-        info@celerispay.com
-      </p>
-    </div>
-    <hr />
+  <div>
+    <h3>Questions</h3>
+    <p>
+      For further questions or feedback, kindly send us your questions or
+      suggestions to:
+    </p>
+    <p style="color: #03b7ff; text-decoration: underline">
+      info@celerispay.com
+    </p>
   </div>
+  <hr />
+</div>

@@ -64,7 +64,7 @@ export class SecureDataComponent implements OnInit {
   unorderlist_1: Array<String> = unorderlist_1;
 
 
-  
+
   // unorderlist_1 = [
   //   {
   //     list: ' If the card has been successfully authenticated with 3DS2, the liability shifts from the merchant to the card issuer, and the merchant can authorize the payment.',
@@ -81,6 +81,10 @@ export class SecureDataComponent implements OnInit {
   // ];
 
   table_data_x = [
+    row : {
+      columns: [],
+      isColor: yes
+    }
     ['Scenarios', 'Issuer in EEA region', 'Issuer outside of EEA region'],
     ['Acquirer in EEA region', 'SCA required', 'SCA exempted'],
     ['Acquirer outside of EEA region', 'SCA exempted', 'SCA exempted'],
@@ -99,9 +103,9 @@ export class SecureDataComponent implements OnInit {
   // ];
 
   item: any;
-String: any;
+  String: any;
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
